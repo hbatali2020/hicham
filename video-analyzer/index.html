@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Analysis</title>
+</head>
+<body>
+    <h1>Video Analysis for Person Detection</h1>
+
+    <!-- زر لتحميل الفيديو -->
+    <input type="file" id="video-upload" accept="video/*">
+
+    <!-- عنصر الفيديو لعرض الفيديو -->
+    <video id="video" width="640" height="480" controls></video>
+
+    <!-- عنصر الكانفس لرسم نتائج التحليل -->
+    <canvas id="output" width="640" height="480"></canvas>
+
+    <!-- الربط مع ملف JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- مكتبات TensorFlow.js و COCO-SSD -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</body>
+</html>
